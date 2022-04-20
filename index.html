@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css">
+  <title>電卓</title>
+</head>
+
+<body>
+  <div class="calculator">
+    <table>
+      <!-- 液晶画面部分 -->
+      <tr>
+        <td colspan="4" id="result">0</td>
+      </tr>
+
+      <!-- 1段目（7~9＋） -->
+      <tr>
+        <td class="cal_b">
+          <button class="button" onclick="clickbutton(this)">7</button>
+        </td>
+        <td class="cal_b">
+          <button class="button" onclick="clickbutton(this)">8</button>
+        </td>
+        <td class="cal_b">
+          <button class="button" onclick="clickbutton(this)">9</button>
+        </td>
+        <td class="cal_b">
+          <button class="button code_b" onclick="clickbutton(this)">+</button>
+        </td>
+      </tr>
+
+      <!-- 2段目（4~6-） -->
+      <tr>
+        <td class="cal_b">
+          <button class="button" onclick="clickbutton(this)">4</button>
+        </td>
+        <td class="cal_b">
+          <button class="button" onclick="clickbutton(this)">5</button>
+        </td>
+        <td class="cal_b">
+          <button class="button" onclick="clickbutton(this)">6</button>
+        </td>
+        <td class="cal_b">
+          <button class="button code_b" onclick="clickbutton(this)">-</button>
+        </td>
+      </tr>
+
+      <!-- 3段目（1~3*） -->
+      <tr>
+        <td class="cal_b">
+          <button class="button" onclick="clickbutton(this)">1</button>
+        </td>
+        <td class="cal_b">
+          <button class="button" onclick="clickbutton(this)">2</button>
+        </td>
+        <td class="cal_b">
+          <button class="button" onclick="clickbutton(this)">3</button>
+        </td>
+        <td class="cal_b">
+          <button class="button code_b" onclick="clickbutton(this)">*</button>
+        </td>
+      </tr>
+
+      <!-- 4段目（0/00/.//) -->
+      <tr>
+        <td class="cal_b">
+          <button class="button" onclick="clickbutton(this)">0</button>
+        </td>
+        <td class="cal_b">
+          <button class="button" onclick="clickbutton(this)">00</button>
+        </td>
+        <td class="cal_b">
+          <button class="button point" onclick="clickbutton(this)">.</button>
+        </td>
+        <td class="cal_b">
+          <button class="button code_b" onclick="clickbutton(this)">/</button>
+        </td>
+      </tr>
+      <!-- 5段目（AC/=/) -->
+      <tr>
+        <td class="cal_b" colspan="2">
+          <button class="button" onclick="clickbutton(this)">AC</button>
+        </td>
+        <td class="cal_b" colspan="2">
+          <button class="button" onclick="clickbutton(this)">=</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
